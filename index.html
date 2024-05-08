@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allergy Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Allergy Checker</h1>
+    <form id="allergy-form">
+        <label for="allergens">Enter your allergens (separated by commas):</label>
+        <input type="text" id="allergens" name="allergens">
+        <br>
+        <label for="ingredient-image">Upload an image of an ingredient label:</label>
+        <input type="file" id="ingredient-image" name="ingredient-image">
+        <br>
+        <button type="submit">Check for Allergens</button>
+    </form>
+    <div id="result"></div>
+    <div id="extracted-text"></div>
+    <script src="https://unpkg.com/tesseract.js@5.0.0-alpha.20220628/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
